@@ -7,12 +7,40 @@
     <link rel="stylesheet" href="../style.css" />
     <style>
       /* Doe hier jouw ding! */
+
+      body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0fr 1fr 1fr 0fr;
+        gap: 10px;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "main"
+        "footer";
+      }
+      header{
+        grid-area: header;
+      
+      }
+      nav{
+        grid-area: nav;
+      
+      }
+      main{
+        grid-area: main;
+      
+      }
+      footer{
+        grid-area: footer;
+      }
     </style>
   </head>
   <body id="basic-layout-2">
-    <header><h1>Basic Layout 2</h1></header>
+    <header><h1>Basic Layout 2</h1>header</header>
     <nav><a href="../index.html">Terug naar het overzicht</a></nav>
-    <main></main>
-    <footer></footer>
+    <main>main</main>
+    <footer>footer</footer>
   </body>
 </html>
